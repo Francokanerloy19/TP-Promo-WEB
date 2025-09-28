@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrador\\Documents\\Programacion III\\TP-Promo-WEB\\",
+  "WorkspaceRootPath": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|c:\\users\\administrador\\documents\\programacion iii\\tp-promo-web\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{23F5B0AE-7D22-46B6-92B9-DCE690050F45}|TP Promo WEB\\TP Promo WEB.csproj|e:\\curso c#\\segunda cursada\\tp-web\\tp-promo-web\\tp promo web\\formulario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{23F5B0AE-7D22-46B6-92B9-DCE690050F45}|TP Promo WEB\\TP Promo WEB.csproj|solutionrelative:tp promo web\\formulario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|e:\\curso c#\\segunda cursada\\tp-web\\tp-promo-web\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|c:\\users\\administrador\\documents\\programacion iii\\tp-promo-web\\dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|solutionrelative:dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A672FBC8-2E08-46C8-BB3D-AF0670A44FD6}|Negocio\\Negocio.csproj|C:\\Users\\Administrador\\Documents\\Programacion III\\TP-Promo-WEB\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A672FBC8-2E08-46C8-BB3D-AF0670A44FD6}|Negocio\\Negocio.csproj|E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A672FBC8-2E08-46C8-BB3D-AF0670A44FD6}|Negocio\\Negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,49 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Imagen.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Programacion III\\TP-Promo-WEB\\Dominio\\Imagen.cs",
-              "RelativeDocumentMoniker": "Dominio\\Imagen.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Programacion III\\TP-Promo-WEB\\Dominio\\Imagen.cs",
-              "RelativeToolTip": "Dominio\\Imagen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T23:13:17.49Z",
+              "DocumentIndex": 0,
+              "Title": "Formulario.aspx",
+              "DocumentMoniker": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\TP Promo WEB\\Formulario.aspx",
+              "RelativeDocumentMoniker": "TP Promo WEB\\Formulario.aspx",
+              "ToolTip": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\TP Promo WEB\\Formulario.aspx",
+              "RelativeToolTip": "TP Promo WEB\\Formulario.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-28T19:46:45.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Programacion III\\TP-Promo-WEB\\Dominio\\Articulo.cs",
+              "DocumentMoniker": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Dominio\\Articulo.cs",
               "RelativeDocumentMoniker": "Dominio\\Articulo.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Programacion III\\TP-Promo-WEB\\Dominio\\Articulo.cs",
+              "ToolTip": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Dominio\\Articulo.cs",
               "RelativeToolTip": "Dominio\\Articulo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T22:34:38.731Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\Programacion III\\TP-Promo-WEB\\Negocio\\AccesoDatos.cs",
+              "DocumentMoniker": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Negocio\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "Negocio\\AccesoDatos.cs",
-              "ToolTip": "C:\\Users\\Administrador\\Documents\\Programacion III\\TP-Promo-WEB\\Negocio\\AccesoDatos.cs",
+              "ToolTip": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Negocio\\AccesoDatos.cs",
               "RelativeToolTip": "Negocio\\AccesoDatos.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAwwBEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T22:08:32.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Imagen.cs",
+              "DocumentMoniker": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Dominio\\Imagen.cs",
+              "RelativeDocumentMoniker": "Dominio\\Imagen.cs",
+              "ToolTip": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Dominio\\Imagen.cs",
+              "RelativeToolTip": "Dominio\\Imagen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T23:13:17.49Z"
             }
           ]
         }
