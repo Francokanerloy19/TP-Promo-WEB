@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{23F5B0AE-7D22-46B6-92B9-DCE690050F45}|TP Promo WEB\\TP Promo WEB.csproj|solutionrelative:tp promo web\\formulario.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|e:\\curso c#\\segunda cursada\\tp-web\\tp-promo-web\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{23F5B0AE-7D22-46B6-92B9-DCE690050F45}|TP Promo WEB\\TP Promo WEB.csproj|e:\\curso c#\\segunda cursada\\tp-web\\tp-promo-web\\tp promo web\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{23F5B0AE-7D22-46B6-92B9-DCE690050F45}|TP Promo WEB\\TP Promo WEB.csproj|solutionrelative:tp promo web\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4DA20D-0465-4166-86D7-0EB6767774E6}|Dominio\\Dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Site.Master",
+              "DocumentMoniker": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\TP Promo WEB\\Site.Master",
+              "RelativeDocumentMoniker": "TP Promo WEB\\Site.Master",
+              "ToolTip": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\TP Promo WEB\\Site.Master",
+              "RelativeToolTip": "TP Promo WEB\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-09-28T19:53:25.642Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Articulo.cs",
               "DocumentMoniker": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Dominio\\Articulo.cs",
               "RelativeDocumentMoniker": "Dominio\\Articulo.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "Dominio\\Articulo.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAUwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T22:34:38.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T22:34:38.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AccesoDatos.cs",
               "DocumentMoniker": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Negocio\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "Negocio\\AccesoDatos.cs",
@@ -68,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Imagen.cs",
               "DocumentMoniker": "E:\\Curso C#\\segunda cursada\\TP-Web\\TP-Promo-WEB\\Dominio\\Imagen.cs",
               "RelativeDocumentMoniker": "Dominio\\Imagen.cs",
