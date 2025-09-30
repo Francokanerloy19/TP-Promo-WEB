@@ -22,8 +22,8 @@ namespace Dominio
         [DisplayName("Precio")]
         public decimal PrecioArticulo { get; set; }
 
-        //public Marca Marca { get; set; }
-        //public Categoria Categoria { get; set; }
+        public Marca Marca { get; set; }
+        public Categoria Categoria { get; set; }
         public List<Imagen> Imagenes { get; set; }
     }
 }
