@@ -51,13 +51,49 @@ namespace TP_Promo_WEB
         protected global::System.Web.UI.WebControls.TextBox TextNombre;
 
         /// <summary>
-        /// Control TextApellido.
+        /// Control rfvNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextApellido;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombre;
+
+        /// <summary>
+        /// Control revNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revNombre;
+
+        /// <summary>
+        /// Control TxtApellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtApellido;
+
+        /// <summary>
+        /// Control refTxtApellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator refTxtApellido;
+
+        /// <summary>
+        /// Control revTxtApellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revTxtApellido;
 
         /// <summary>
         /// Control validationtxtEmail.
@@ -69,6 +105,24 @@ namespace TP_Promo_WEB
         protected global::System.Web.UI.WebControls.TextBox validationtxtEmail;
 
         /// <summary>
+        /// Control rfvValidationtxtEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvValidationtxtEmail;
+
+        /// <summary>
+        /// Control revValidationtxtEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revValidationtxtEmail;
+
+        /// <summary>
         /// Control validationDireccion.
         /// </summary>
         /// <remarks>
@@ -78,22 +132,22 @@ namespace TP_Promo_WEB
         protected global::System.Web.UI.WebControls.TextBox validationDireccion;
 
         /// <summary>
-        /// Control TextCiudad.
+        /// Control TxtCiudad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextCiudad;
+        protected global::System.Web.UI.WebControls.TextBox TxtCiudad;
 
         /// <summary>
-        /// Control TextCP.
+        /// Control TxtCP.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextCP;
+        protected global::System.Web.UI.WebControls.TextBox TxtCP;
 
         /// <summary>
         /// Control btnParticipar.

@@ -17,10 +17,16 @@ namespace TP_Promo_WEB
                 if (Page.IsValid)
                 {
                     txtDNI.CssClass = "form-control is-valid";
+                    TextNombre.CssClass = "form-control is-valid";
+                    TxtApellido.CssClass = "form-control is-valid";
+                    validationtxtEmail.CssClass = "form-control is-valid";
                 }
                 else
                 {
                     txtDNI.CssClass = "form-control is-invalid";
+                    TextNombre.CssClass = "form-control is-invalid";
+                    TxtApellido.CssClass = "form-control is-invalid";
+                    validationtxtEmail.CssClass = "form-control is-invalid";
                 }
             }
 
