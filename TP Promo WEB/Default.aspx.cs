@@ -11,8 +11,9 @@ namespace TP_Promo_WEB
 {
     public partial class _Default : Page
     {
+        protected void btnSiguiente_Click(object sender, EventArgs e)
+        {
 
-    
-    
+        }
     }
 }
