@@ -36,11 +36,11 @@ namespace Negocio
                     aux.Categoria.IdCategoria = (int)accesoDatos.Lector["IdCategoria"];
                     aux.Categoria.Descripcion = (string)accesoDatos.Lector["DescripcionCategoria"];
 
-                    //Hay que agregar  Imagenes
-
+                    ImagenNegocio imagen = new ImagenNegocio();
+                    aux.Imagenes = imagen.ObtenerImagenesPorArticulo(aux.IdArticulo);
+                   
                     Lista.Add(aux);
                 }
-               
             }
             catch (Exception ex)
             {
@@ -50,7 +50,6 @@ namespace Negocio
             {
                 accesoDatos.cerrarConexion();
             }
-
             return Lista;   
         }
     }
