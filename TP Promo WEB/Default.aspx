@@ -1,24 +1,5 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TP_Promo_WEB._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="row row-cols-1 row-cols-3 g-4">
-        <asp:Repeater ID="repetidorDeArticulos" runat="server">
-            <ItemTemplate>
-                <div class="col">
-                    <div class="card border-dark mb-3" style="max-width: 20rem;">
-                 
-                        <img src="<%# ((List<Dominio.Imagen>)Eval("Imagenes"))[0].ImagenUrl %>>" class="card-img-top" alt="..." style="height: 400px; object-fit: contain;" >
-              
-                        <div class="card-body">                       
-                            <h5 class="card-title"><%# Eval("NombreArticulo") %></h5>
-                            <p class="card-text"><%# Eval("DescripcionArticulo") %></p>
-                            <h4 class="card-title" style="color: blue; text-align: right;">
-                                $<%# Eval("PrecioArticulo", "{0:F2}") %>
-                            </h4>                         
-                        </div>
-                    </div>
-                </div>
-            </ItemTemplate>
-        </asp:Repeater>
-    </div>
+
 </asp:Content>
