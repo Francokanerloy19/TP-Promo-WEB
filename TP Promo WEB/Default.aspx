@@ -45,10 +45,12 @@
         <div">
             <label for="TextCodigo" class="form-label">Ingresá el código de tu voucher!</label>
             <asp:TextBox runat="server" ID="TextCodigo" CssClass="form-control txt-largo" placeholder="xxxxxxxx" />
-            <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="TextCodigo" ErrorMessage="El nombre es obligatorio" CssClass="text-danger" Display="Dynamic" />
+            <asp:RequiredFieldValidator ID="rfvNombre" runat="server" ControlToValidate="TextCodigo" ErrorMessage="El código es obligatorio" CssClass="text-danger" Display="Dynamic" />
             <asp:RegularExpressionValidator ID="revNombre" runat="server" ControlToValidate="TextCodigo" ValidationExpression="^[A-Za-z0-9]{6,12}$" ErrorMessage="El voucher es invalido" Display="Dynamic" CssClass="text-danger"/>
             <br />
             <asp:Button Text="Siguiente" ID="btnSiguiente" runat="server" class="btn btn-primary" OnClientClick="return validar()" OnClick="btnSiguiente_Click" />
+            <br />
+            <asp:Label ID="lblMensajeError" runat="server" CssClass="text-danger" />
         </div>
     </div>
 </asp:Content>
