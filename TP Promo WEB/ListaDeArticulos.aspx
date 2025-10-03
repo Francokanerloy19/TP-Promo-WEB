@@ -13,7 +13,9 @@
                             <p class="card-text"><%# Eval("DescripcionArticulo") %></p>
                             <h4 class="card-title" style="color: blue; text-align: right;">
                                 $<%# Eval("PrecioArticulo", "{0:F2}") %>
-                            </h4>                         
+                            </h4>      
+                            
+							<a href='DetalleDeArticulo.aspx?id=<%# Eval("IdArticulo") %>' class="btn btn-primary">Detalle</a>
                         </div>
                     </div>
                 </div>

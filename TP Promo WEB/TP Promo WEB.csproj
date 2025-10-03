@@ -116,6 +116,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DetalleDeArticulos.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Formulario.aspx" />
     <Content Include="Global.asax" />
@@ -204,6 +205,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDeArticulos.aspx.cs">
+      <DependentUpon>DetalleDeArticulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleDeArticulos.aspx.designer.cs">
+      <DependentUpon>DetalleDeArticulos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Formulario.aspx.cs">
       <DependentUpon>Formulario.aspx</DependentUpon>
