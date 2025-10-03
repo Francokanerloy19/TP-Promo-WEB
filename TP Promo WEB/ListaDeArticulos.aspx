@@ -15,7 +15,7 @@
                                 $<%# Eval("PrecioArticulo", "{0:F2}") %>
                             </h4>      
                             
-							<a href='DetalleDeArticulo.aspx?id=<%# Eval("IdArticulo") %>' class="btn btn-primary">Detalle</a>
+							<a href='DetalleDeArticulos.aspx?id=<%# Eval("IdArticulo") %>' class="btn btn-primary">Detalle</a>
                         </div>
                     </div>
                 </div>
