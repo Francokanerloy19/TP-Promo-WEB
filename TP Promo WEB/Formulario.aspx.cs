@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace TP_Promo_WEB
 {
@@ -20,12 +21,30 @@ namespace TP_Promo_WEB
 
         protected void btnParticipar_Click(object sender, EventArgs e)
         {
+            Cliente cliente = new Cliente();
             ClienteNegocio clienteNegocio = new ClienteNegocio();
+            cliente.DNI = txtDNI.Text;
+            cliente.ciudad = txtCiudad.Text;
+            cliente.codPostal = int.Parse(txtCP.Text);
+            cliente.direccion = txtDireccion.Text;
+            cliente.email = validationtxtEmail.Text;
+            cliente.apellido = TxtApellido.Text;
+            cliente.nombre = TextNombre.Text;
+            clienteNegocio.agregar(cliente);  
+
+          
             
+
+        }
+
+        protected void txtDNI_TextChanged(object sender, EventArgs e)
+        {
+            ClienteNegocio clienteNegocio = new ClienteNegocio();
+
             Cliente cliente = new Cliente();
             cliente = clienteNegocio.buscarDNI(txtDNI.Text);
-            txtCiudad.Text = cliente.ciudad.ToString();
-            if (cliente != null) 
+           
+            if (cliente.DNI != null)
             {
                 txtCiudad.Text = cliente.ciudad.ToString();
                 txtCP.Text = cliente.codPostal.ToString();
@@ -36,33 +55,10 @@ namespace TP_Promo_WEB
 
 
             }
-             // public int id { get; set; }
-        
-        
-        
-        
-        
-
-
-
-        //// Recupero el objeto Cupon de sesión
-        //Cupon voucher = Session["voucher"] as Cupon;
-
-        //if (voucher != null)
-        //{
-        //    // Completo los datos que necesites
-        //    voucher.fechaCanje = DateTime.Now;
-        //    voucher.idClinte = 123; // ejemplo
-
-        //    // Llamo al método de negocio para actualizar la BD
-
-        //    //CuponNegocio negocio = new CuponNegocio();
-        //    // negocio.ModificarCupon(voucher);// tengo que crear el metodo
-
-        //    // limpiar la sesión si ya no la necesitas
-        //    Session.Remove("voucher");
-        //}
-
-    }
+            else
+            {
+                return;
+            }
+        }
     }
 }

@@ -116,7 +116,7 @@
         <h3>Ingresá tus datos</h3>
         <div class="col mb-3">
             <label for="txtDNI" class="form-label">DNI</label>
-            <asp:TextBox runat="server" ID="txtDNI" AutoPostBack="false" CssClass="form-control" placeholder="33445577" />
+            <asp:TextBox runat="server" ID="txtDNI" AutoPostBack="true" OnTextChanged="txtDNI_TextChanged" CssClass="form-control" placeholder="33445577" />
             <asp:RequiredFieldValidator ID="rfvDNI" runat="server" ControlToValidate="txtDNI" ErrorMessage="El DNI es obligatorio" CssClass="text-danger" Display="Dynamic" />
             <asp:RegularExpressionValidator ID="revDNI" runat="server" ControlToValidate="txtDNI" ValidationExpression="^\d{7,8}$" ErrorMessage="El DNI debe tener entre 7 y 8 dígitos" CssClass="text-danger" Display="Dynamic" />
         </div>
