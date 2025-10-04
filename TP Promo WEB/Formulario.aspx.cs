@@ -63,6 +63,8 @@ namespace TP_Promo_WEB
 
                 // limpio el objeto guardado en sesión 
                 Session.Remove("voucher");
+
+                Response.Redirect("Final.aspx", false);
             }
 
         }
