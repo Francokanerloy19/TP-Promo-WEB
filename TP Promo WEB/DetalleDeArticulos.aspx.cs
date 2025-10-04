@@ -16,19 +16,34 @@ namespace TP_Promo_WEB
         {
             if (!IsPostBack)
             {
-                int id = int.Parse(Request.QueryString["id"]);
-                ArticuloNegocio articuloNegocio = new ArticuloNegocio();
-                articuloSeleccionado = articuloNegocio.BuscarArticuloPorId(id);
-
-                if (articuloSeleccionado != null)
+                // Validar parámetro 'id' en la URL
+                string parametroId = Request.QueryString["id"];
+                if (string.IsNullOrEmpty(parametroId) || !int.TryParse(parametroId, out int id))
                 {
-                    lblNombre.Text = articuloSeleccionado.NombreArticulo;
-                    lblDescripcion.Text = articuloSeleccionado.DescripcionArticulo;
-                    lblPrecio.Text = articuloSeleccionado.PrecioArticulo.ToString("C");
-
-                    repImagenes.DataSource = articuloSeleccionado.Imagenes;
-                    repImagenes.DataBind();
+                    Response.Redirect("ListaDeArticulos.aspx");
+                    return;
                 }
+
+                ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+                Articulo articuloSeleccionado = articuloNegocio.BuscarArticuloPorId(id);
+
+                if (articuloSeleccionado == null)
+                {
+                    Response.Redirect("ListaDeArticulos.aspx");
+                    return;
+                }
+
+                // Cargar los datos del artículo en los controles
+                txtId.Text = articuloSeleccionado.IdArticulo.ToString();
+                txtNombre.Text = articuloSeleccionado.NombreArticulo;
+                txtCodigo.Text = articuloSeleccionado.CodigoArticulo;
+                txtCategoria.Text = articuloSeleccionado.Categoria.DescripcionCategoria;
+                txtMarca.Text = articuloSeleccionado.Marca.DescripcionMarca;
+                txtPrecio.Text = articuloSeleccionado.PrecioArticulo.ToString("C");
+
+                // Cargar imágenes en el carrusel
+                repImagenes.DataSource = articuloSeleccionado.Imagenes;
+                repImagenes.DataBind();
             }
         }
     }
