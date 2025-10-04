@@ -198,5 +198,8 @@
         <asp:Button Text="Participar!" ID="btnParticipar" runat="server" class="btn btn-primary" OnClientClick="return validar()" OnClick="btnParticipar_Click" />
     </div>
 
+    <hr />
+     
+    <asp:TextBox runat="server" ID="txtprueba" CssClass="form-control" placeholder="xxxx" />
 
 </asp:Content>

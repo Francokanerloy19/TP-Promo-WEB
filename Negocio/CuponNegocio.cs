@@ -22,13 +22,14 @@ namespace Negocio
 
                 if (accesoDatos.Lector.Read())
                 {
-                    cupon = new Cupon
+                    cupon = new Cupon();
                     {
-                        codigoVoucher = accesoDatos.Lector["CodigoVoucher"].ToString(),
-                        idClinte = accesoDatos.Lector["IdCliente"] != DBNull.Value ? Convert.ToInt32(accesoDatos.Lector["IdCliente"]) : (int?)null,
-                        fechaCanje = accesoDatos.Lector["FechaCanje"] != DBNull.Value ? Convert.ToDateTime(accesoDatos.Lector["FechaCanje"]) : (DateTime?)null,
-                        idArticulo = accesoDatos.Lector["IdArticulo"] != DBNull.Value ? Convert.ToInt32(accesoDatos.Lector["IdArticulo"]) : (int?)null
-                    };
+                        cupon.codigoVoucher = accesoDatos.Lector["CodigoVoucher"].ToString();
+                        cupon.idClinte = accesoDatos.Lector["IdCliente"] != DBNull.Value ? Convert.ToInt32(accesoDatos.Lector["IdCliente"]) : (int?)null;
+                        cupon.fechaCanje = accesoDatos.Lector["FechaCanje"] != DBNull.Value ? Convert.ToDateTime(accesoDatos.Lector["FechaCanje"]) : (DateTime?)null;
+                        cupon.idArticulo = accesoDatos.Lector["IdArticulo"] != DBNull.Value ? Convert.ToInt32(accesoDatos.Lector["IdArticulo"]) : (int?)null;
+                    }
+                    
                 }
             }
             catch (Exception)
