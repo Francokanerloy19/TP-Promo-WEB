@@ -15,13 +15,14 @@ namespace TP_Promo_WEB
         public Cupon voucher { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
 
         }
 
         protected void btnParticipar_Click(object sender, EventArgs e)
         {
             Cliente cliente = new Cliente();
+
             ClienteNegocio clienteNegocio = new ClienteNegocio();
             cliente.DNI = txtDNI.Text;
             cliente.ciudad = txtCiudad.Text;
@@ -30,10 +31,39 @@ namespace TP_Promo_WEB
             cliente.email = validationtxtEmail.Text;
             cliente.apellido = TxtApellido.Text;
             cliente.nombre = TextNombre.Text;
-            clienteNegocio.agregar(cliente);  
 
-          
-            
+            Cliente clienteExistente = clienteNegocio.buscarDNI(cliente.DNI);
+            if (clienteExistente == null)
+            {
+                // Agrego el nuevo cliente
+                clienteNegocio.agregar(cliente);
+                // Lo busco para recuperar el ID generado
+                cliente = clienteNegocio.buscarDNI(cliente.DNI);
+            }
+            else
+            {
+                cliente = clienteExistente;
+            }
+
+
+
+            // Recupero el objeto Cupon de sesión
+            Cupon voucher = Session["voucher"] as Cupon;
+
+            if (voucher != null)
+            {
+                // Completo los datos que necesites
+                voucher.fechaCanje = DateTime.Now;
+                cliente = clienteNegocio.buscarDNI(cliente.DNI);
+                voucher.idClinte = cliente.id;
+                voucher.idArticulo = 2;// ejemplo;
+
+                CuponNegocio negocio = new CuponNegocio();
+                negocio.ModificarCupon(voucher);
+
+                // limpio el objeto guardado en sesión 
+                Session.Remove("voucher");
+            }
 
         }
 
@@ -43,8 +73,8 @@ namespace TP_Promo_WEB
 
             Cliente cliente = new Cliente();
             cliente = clienteNegocio.buscarDNI(txtDNI.Text);
-           
-            if (cliente.DNI != null)
+
+            if (cliente != null)
             {
                 txtCiudad.Text = cliente.ciudad.ToString();
                 txtCP.Text = cliente.codPostal.ToString();
@@ -55,10 +85,7 @@ namespace TP_Promo_WEB
 
 
             }
-            else
-            {
-                return;
-            }
+            
         }
     }
 }

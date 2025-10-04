@@ -12,7 +12,7 @@ namespace Negocio
         public Cliente buscarDNI(string dni)
         {
             AccesoDatos accesoDatos = new AccesoDatos();
-            Cliente cliente = new Cliente();
+            Cliente cliente = null;
             try
             {
                 accesoDatos.setearConsulta("SELECT id,Documento,Nombre,Apellido,Email,Direccion,Ciudad,CP FROM Clientes where Documento = @Documento");
@@ -21,6 +21,7 @@ namespace Negocio
 
                 if (accesoDatos.Lector.Read()) 
                 {
+                    cliente = new Cliente();
                     cliente.id = (int)accesoDatos.Lector["id"];
                     cliente.DNI = (string)accesoDatos.Lector["Documento"];
                     cliente.nombre = (string)accesoDatos.Lector["Nombre"];
@@ -41,10 +42,10 @@ namespace Negocio
             {
                 accesoDatos.cerrarConexion();
             }
-            return cliente;
+            return cliente; // retorna null si no encuentra nada
         }
 
-        public Cliente agregar(Cliente cliente) 
+        public void agregar(Cliente cliente) 
         {
             AccesoDatos accesoDatos = new AccesoDatos();
             try
@@ -67,7 +68,7 @@ namespace Negocio
             {
                 accesoDatos.cerrarConexion();
             }
-            return cliente;
+            
         }
     }
 }

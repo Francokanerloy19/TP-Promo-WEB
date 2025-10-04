@@ -44,6 +44,29 @@ namespace Negocio
             return cupon;
         }
 
+        public void ModificarCupon(Cupon voucher)
+        {
+            AccesoDatos accesoDatos = new AccesoDatos();
+            try
+            {
+                accesoDatos.setearConsulta("UPDATE Vouchers SET CodigoVoucher = @CodigoVoucher, IdCliente = @IdCliente, FechaCanje = @FechaCanje, IdArticulo = @IdArticulo WHERE CodigoVoucher = @CodigoVoucher");
+                accesoDatos.setearParametros("@CodigoVoucher", voucher.codigoVoucher);
+                accesoDatos.setearParametros("@IdCliente", voucher.idClinte);
+                accesoDatos.setearParametros("@FechaCanje", voucher.fechaCanje);
+                accesoDatos.setearParametros("@IdArticulo", voucher.idArticulo);
+                accesoDatos.ejecutarAccion();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+            
+        }
+
     }
 }
 
