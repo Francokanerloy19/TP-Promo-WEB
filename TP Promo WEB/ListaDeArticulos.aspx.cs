@@ -30,6 +30,20 @@ namespace TP_Promo_WEB
                 Session.Add("error", ex);
             }
         }
+        protected void btnContinuar_Click(object sender, EventArgs e)
+        {
+            Button boton = (Button)sender;
+            int idArticulo = Convert.ToInt32(boton.CommandArgument);
+            Cupon voucher = (Cupon)Session["voucher"];
+            if (voucher != null)
+            {
+                voucher.idArticulo = idArticulo;
+
+                // actualizo el objeto en seion
+                Session["voucher"] = voucher;
+            }
+            Response.Redirect("Formulario.aspx");
+        }
 
     }
 }

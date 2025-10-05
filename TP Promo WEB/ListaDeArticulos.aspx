@@ -16,6 +16,9 @@
                             </h4>      
                             
 							<a href='DetalleDeArticulos.aspx?id=<%# Eval("IdArticulo") %>' class="btn btn-primary">Detalle</a>
+
+                            <asp:Button runat="server" ID="btnContinuar" CssClass="btn btn-primary" Text="Continuar" CommandName="VerDetalle" OnClick="btnContinuar_Click" CommandArgument='<%# Eval("IdArticulo") %>' />
+
                         </div>
                     </div>
                 </div>

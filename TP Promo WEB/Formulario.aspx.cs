@@ -48,7 +48,7 @@ namespace TP_Promo_WEB
 
 
             // Recupero el objeto Cupon de sesión
-            Cupon voucher = Session["voucher"] as Cupon;
+            Cupon voucher = (Cupon)Session["voucher"];
 
             if (voucher != null)
             {
@@ -56,7 +56,7 @@ namespace TP_Promo_WEB
                 voucher.fechaCanje = DateTime.Now;
                 cliente = clienteNegocio.buscarDNI(cliente.DNI);
                 voucher.idClinte = cliente.id;
-                voucher.idArticulo = 2;// ejemplo;
+                
 
                 CuponNegocio negocio = new CuponNegocio();
                 negocio.ModificarCupon(voucher);

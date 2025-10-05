@@ -36,9 +36,8 @@ namespace TP_Promo_WEB
                 }
                 else
                 {
-                    Session.Add("voucher", cupon);
-                   // Response.Redirect("ListaDeArticulos.aspx", false);
-                    Response.Redirect("Formulario.aspx",false);
+                    Session.Add("voucher", cupon); 
+                    Response.Redirect("ListaDeArticulos.aspx", false);
 
                 }
             }
